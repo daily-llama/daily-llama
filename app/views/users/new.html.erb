@@ -1,0 +1,10 @@
+<h1>Sign up for the Daily-Llama!</h1>
+
+<% form_options = {
+    user: @user,
+    form_action: users_url,
+    http_method: 'POST',
+    button_text: 'Sign up!'
+  } %>
+
+<%= render "users/form", form_options %>

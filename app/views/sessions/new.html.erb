@@ -1,0 +1,10 @@
+<h1>Sign in to the Daily-Llama!</h1>
+
+<% form_options = {
+    user: @user,
+    form_action: sessions_url,
+    http_method: 'POST',
+    button_text: 'Sign in!'
+  } %>
+
+<%= render "users/form", form_options %>
