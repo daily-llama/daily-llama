@@ -1,0 +1,9 @@
+<h1>The Daily Llama</h1>
+<img src="<%= @picture.picture_url%>">
+<%= render "captions/new" %>
+
+<% @picture.captions.each do |caption| %>
+<p><%= caption %>
+  <%= caption.author %></p> <br>
+  <% end %>
+<footer>The Daily Llama </footer> 

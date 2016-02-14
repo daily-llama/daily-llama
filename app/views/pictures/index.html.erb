@@ -1,0 +1,9 @@
+<h1>The Daily Llama</h1>
+
+
+<% @pictures.each do |picture| %>
+<img src="<%=picture.picture_url%>" alt="" />
+<p><%= picture.topCaption%>
+  
+  <% end %>
+<footer>The Daily Llama </footer>
