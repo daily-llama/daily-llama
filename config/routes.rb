@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'rails/g'
+
+  get 'rails/controller'
+
+  get 'rails/Captions'
+
   resources :users, only: [:new, :create, :destroy, :show]
   resource :session, only: [:new, :create, :destroy]
   resources :pictures, only: [:show, :index, :new, :create]
