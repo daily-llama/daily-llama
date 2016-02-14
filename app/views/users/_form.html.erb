@@ -1,7 +1,7 @@
-<%  user = form_options[user] %>
-<%  form_action = form_options[form_action] %>
-<%  http_method = form_options[http_method] %>
-<%  button_text = form_options[button_text] %>
+<%  user = form_options[:user] %>
+<%  form_action = form_options[:form_action] %>
+<%  http_method = form_options[:http_method] %>
+<%  button_text = form_options[:button_text] %>
 
 <form action="<%= form_action %>" method="post">
   <input type="hidden" name="_method" value="<%= http_method %>">
@@ -9,12 +9,12 @@
 
   <label>Username:
     <br/>
-    <input type="text" name="user[username]" value="<%= username %>">
+    <input type="text" name="user[username]" value="<%= user.username %>">
   </label>
-
+  <br/>
   <label>Password:
     <br/>
-    <input type="password" name="user[password]" value="<%= username %>">
+    <input type="password" name="user[password]" value="<%= user.password %>">
   </label>
 
   <br/>
