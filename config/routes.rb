@@ -1,3 +1,24 @@
+# == Route Map
+#
+#           Prefix Verb   URI Pattern                 Controller#Action
+#          rails_g GET    /rails/g(.:format)          rails#g
+# rails_controller GET    /rails/controller(.:format) rails#controller
+#   rails_Captions GET    /rails/Captions(.:format)   rails#Captions
+#            users POST   /users(.:format)            users#create
+#         new_user GET    /users/new(.:format)        users#new
+#             user GET    /users/:id(.:format)        users#show
+#                  DELETE /users/:id(.:format)        users#destroy
+#          session POST   /session(.:format)          sessions#create
+#      new_session GET    /session/new(.:format)      sessions#new
+#                  DELETE /session(.:format)          sessions#destroy
+#         pictures GET    /pictures(.:format)         pictures#index
+#                  POST   /pictures(.:format)         pictures#create
+#      new_picture GET    /pictures/new(.:format)     pictures#new
+#          picture GET    /pictures/:id(.:format)     pictures#show
+#         captions POST   /captions(.:format)         captions#create
+#      new_caption GET    /captions/new(.:format)     captions#new
+#
+
 Rails.application.routes.draw do
 
   get 'rails/g'
