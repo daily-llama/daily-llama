@@ -1,0 +1,19 @@
+<!-- inputs: user, form_action, http_method, and button_text -->
+
+<form action="<%= form_action %>" method="post">
+  <input type="hidden" name="_method" value="<%= http_method %>">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+  <label>Username:
+    <br/>
+    <input type="text" name="user[username]" value="<%= username %>">
+  </label>
+
+  <label>Password:
+    <br/>
+    <input type="password" name="user[password]" value="<%= username %>">
+  </label>
+
+  <br/>
+  <input type="submit" value="<%= button_text %>">
+</form>
