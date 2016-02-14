@@ -3,8 +3,8 @@
     <tr>
       <td>Logged in as: <%= current_user.username %></td>
       <td><%= button_to "Sign Out", session_url, method: :delete %></td>
-      <td><%= link_to "Edit Account", edit_user_url(current_user) %></td>
-      <td><%= link_to "View All Your Posts", posts_url %></td>
+      <td><%= link_to "Edit Account", "#" %></td>
+      <td><%= link_to "View All Your Posts", "#" %></td>
     </tr>
   </table>
 <% else %>
